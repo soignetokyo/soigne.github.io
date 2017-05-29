@@ -33,15 +33,14 @@ p {
 header {
   height: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
-header p {
-  font-family: "Trade Gothic W01", "Hiragino Kaku Gothic ProN";
-  color: white;
-  font-size: 14px;
-  margin-left: 10px;
-  margin-right: 10px;
+header img {
+  margin-left: 6px;
+  margin-right: 6px;
+  width: 24px;
+  height: 24px;
 }
 
 
