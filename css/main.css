@@ -9,7 +9,7 @@ body {
 
 h1 {
   font-family: "Trade Gothic W01", "Hiragino Kaku Gothic ProN";
-  letter-spacing: 20px;
+  letter-spacing: 18px;
   font-size: 40px;
   font-weight: 100;
   color: white;
@@ -17,6 +17,7 @@ h1 {
 
 h2 {
   font-family: "Trade Gothic W01", "Hiragino Kaku Gothic ProN";
+  letter-spacing: 8px;
   font-size: 20px;
   font-weight: 100;
   color: white;
