@@ -6,26 +6,50 @@ body {
 }
 
 /* fonts */
+@media screen and (max-width:768px) {
+  h1 {
+    font-family: "Trade Gothic W01", "Hiragino Kaku Gothic ProN";
+    letter-spacing: 18px;
+    font-size: 40px;
+    font-weight: 100;
+    color: white;
+  }
 
-h1 {
-  font-family: "Trade Gothic W01", "Hiragino Kaku Gothic ProN";
-  letter-spacing: 18px;
-  font-size: 40px;
-  font-weight: 100;
-  color: white;
+  h2 {
+    font-family: "Trade Gothic W01", "Hiragino Kaku Gothic ProN";
+    letter-spacing: 6px;
+    font-size: 12px;
+    font-weight: 100;
+    color: white;
+  }
+
+  p {
+    font-family: "Trade Gothic W01", "Hiragino Kaku Gothic ProN";
+    color: white;
+  }
 }
 
-h2 {
-  font-family: "Trade Gothic W01", "Hiragino Kaku Gothic ProN";
-  letter-spacing: 8px;
-  font-size: 20px;
-  font-weight: 100;
-  color: white;
-}
+@media screen and (min-width:768px) {
+  h1 {
+    font-family: "Trade Gothic W01", "Hiragino Kaku Gothic ProN";
+    letter-spacing: 18px;
+    font-size: 40px;
+    font-weight: 100;
+    color: white;
+  }
 
-p {
-  font-family: "Trade Gothic W01", "Hiragino Kaku Gothic ProN";
-  color: white;
+  h2 {
+    font-family: "Trade Gothic W01", "Hiragino Kaku Gothic ProN";
+    letter-spacing: 8px;
+    font-size: 16px;
+    font-weight: 100;
+    color: white;
+  }
+
+  p {
+    font-family: "Trade Gothic W01", "Hiragino Kaku Gothic ProN";
+    color: white;
+  }
 }
 
 /* basic */
@@ -45,16 +69,41 @@ header img {
 
 
 /* components */
+@media screen and (max-width:768px) {
+  .top-wrapper {
+    margin-top: 170px;
+    display: table;
+  	width: 100%;
+  	height: 100%;
+  }
 
-.top-wrapper {
-  margin-top: 170px;
-  display: table;
-	width: 100%;
-	height: 100%;
+  .top-text {
+    display: table-cell;
+  	text-align: center;
+  	vertical-align: middle;
+  }
+
+  .top-logo {
+    width: 300px;
+  }
 }
 
-.top-text {
-  display: table-cell;
-	text-align: center;
-	vertical-align: middle;
+/*@media screen and (min-width:768px) and ( max-width:1024px) { */
+@media screen and (min-width:768px) {
+  .top-wrapper {
+    margin-top: 170px;
+    display: table;
+  	width: 100%;
+  	height: 100%;
+  }
+
+  .top-text {
+    display: table-cell;
+  	text-align: center;
+  	vertical-align: middle;
+  }
+
+  .top-logo {
+    width: 512px;
+  }
 }
