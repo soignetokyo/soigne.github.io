@@ -1,63 +1,62 @@
 body {
-  background-image: url('../img/top.jpg');
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  background-color: rgb(18, 18, 18);
+  font-family: "Trade Gothic W01", "Hiragino Kaku Gothic ProN";
+  color: white;
 }
 
 /* fonts */
-@media screen and (max-width:768px) {
-  h1 {
-    font-family: "Trade Gothic W01", "Hiragino Kaku Gothic ProN";
-    letter-spacing: 18px;
-    font-size: 40px;
-    font-weight: 100;
-    color: white;
-  }
-
-  h2 {
-    font-family: "Trade Gothic W01", "Hiragino Kaku Gothic ProN";
-    letter-spacing: 6px;
-    font-size: 12px;
-    font-weight: 100;
-    color: white;
-  }
-
-  p {
-    font-family: "Trade Gothic W01", "Hiragino Kaku Gothic ProN";
-    color: white;
-  }
+.wf-hannari {
+  font-family: "Hannari", serif;
 }
 
-@media screen and (min-width:768px) {
-  h1 {
-    font-family: "Trade Gothic W01", "Hiragino Kaku Gothic ProN";
-    letter-spacing: 18px;
-    font-size: 40px;
-    font-weight: 100;
-    color: white;
-  }
+h1 {
+  font-family: "Trade Gothic W01", "Hiragino Kaku Gothic ProN";
+  letter-spacing: 10px;
+  font-size: 28px;
+  font-weight: 100;
+  color: white;
+}
 
-  h2 {
-    font-family: "Trade Gothic W01", "Hiragino Kaku Gothic ProN";
-    letter-spacing: 8px;
-    font-size: 16px;
-    font-weight: 100;
-    color: white;
-  }
+h2 {
+  font-family: "Trade Gothic W01", "Hiragino Kaku Gothic ProN";
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: 100;
+  color: white;
+}
 
-  p {
-    font-family: "Trade Gothic W01", "Hiragino Kaku Gothic ProN";
-    color: white;
-  }
+h3 {
+  font-family: "Trade Gothic W01", "Hiragino Kaku Gothic ProN";
+  letter-spacing: 4px;
+  font-size: 12px;
+  font-weight: 100;
+  color: white;
+}
+
+p {
+  font-family: "Trade Gothic W01", "Hiragino Kaku Gothic ProN";
+  color: white;
+}
+
+span {
+  font-family: 'Hannari';
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
 /* basic */
-
 header {
-  height: 60px;
+  position: relative;
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+  
 }
 
 header img {
@@ -67,43 +66,195 @@ header img {
   height: 24px;
 }
 
+header-menu {
+  width: 100%;
+  color: white;
+}
+
+header a {
+  font-weight: 100;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-left: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+header a:hover {
+  color: rgb(255, 255, 255);
+  transition-delay: 50ms;
+}
+
+header .header-selected {
+  color: rgb(255, 255, 255);
+}
+
+article {
+  width: 100%;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.top-footer {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  font-family: 'Hannari';
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+footer {
+  position: relative;
+  font-family: 'Hannari';
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.flex-1 { flex: 1}
+.flex-2 { flex: 2}
+.flex-3 { flex: 3}
 
 /* components */
-@media screen and (max-width:768px) {
-  .top-wrapper {
-    margin-top: 170px;
-    display: table;
-  	width: 100%;
-  	height: 100%;
-  }
-
-  .top-text {
-    display: table-cell;
-  	text-align: center;
-  	vertical-align: middle;
+/* @media screen and (max-width:768px) {
+  .top {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .top-logo {
     width: 300px;
   }
-}
+
+  .bio-img {
+    width: 300px;
+  }
+} */
 
 /*@media screen and (min-width:768px) and ( max-width:1024px) { */
-@media screen and (min-width:768px) {
-  .top-wrapper {
-    margin-top: 170px;
-    display: table;
-  	width: 100%;
-  	height: 100%;
-  }
-
-  .top-text {
-    display: table-cell;
-  	text-align: center;
-  	vertical-align: middle;
+/* @media screen and (min-width:768px) { */
+  .one-shot {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .top-logo {
     width: 512px;
   }
-}
+
+  .bio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .bio-flex {
+    display: flex;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .bio-description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .bio-member {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .bio-img {
+    margin-top: 60px;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .videos-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .videos-item {
+    width: 100%;
+    display: flex;
+    margin-right: 20px;
+  }
+
+  .music {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .music h1 {
+    text-align: center;
+  }
+
+  .music-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+  }
+
+  .music-wrapper h2{
+    text-align: center;
+  }
+
+  .music-wrapper h3{
+    text-align: center;
+  }
+
+  .music-disc {
+    margin-left: 20px; 
+    margin-bottom: 50px;
+  }
+
+  .music-disc-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .music-embed {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
+  .connection {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .connection a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .connection a:hover{
+    color: white;
+    text-decoration: underline;
+  }
+/* } */
